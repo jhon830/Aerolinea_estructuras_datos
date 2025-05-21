@@ -40,7 +40,7 @@ class ListaEnlazada:
 
     def eliminar_tercer_elemento(self):
         if not self._head or not self._head.siguiente or not self._head.siguiente.siguiente:
-            return False  # no hay tercer elemento
+            return False
         segundo = self._head.siguiente
         tercero = segundo.siguiente
         segundo.siguiente = tercero.siguiente
